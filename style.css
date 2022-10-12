@@ -93,23 +93,19 @@ body a {
   transition-delay: 0s;
   position: relative;
   height: 45px;
-  padding-left: 75px;
+  /* padding-left: 75px; */
   color: var(--text-secondary);
   text-indent: -9999px;
   border: none;
   background-color: transparent;
   outline: none !important;
   cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .multisteps-form__progress-btn span {
   z-index: 2;
-  padding: 0 5px;
-  padding-left: 5px;
-  width: max-content;
-  position: absolute;
-  left: 52%;
-  margin-bottom: 0;
-  top: 30%;
   background-color: var(--white);
 }
 @media (min-width: 500px) {
@@ -117,11 +113,10 @@ body a {
     text-indent: 0;
   }
 }
-.multisteps-form__progress-btn:before {
-  position: absolute;
-  top: calc(50% - 6px);
-  left: 50%;
+.st_stepper_number{
+  position: relative;
   display: block;
+  font-size: 0;
   width: 13px;
   height: 13px;
   content: "";
@@ -143,7 +138,7 @@ body a {
 .multisteps-form__progress-btn:after {
   position: absolute;
   top: 50%;
-  left: calc(-50% - 13px / 2);
+  left: -98%;
   transition-property: all;
   transition-duration: 0.15s;
   transition-timing-function: linear;
@@ -161,7 +156,7 @@ body a {
 .multisteps-form__progress-btn.js-active {
   color: var(--secondary-main);
 }
-.multisteps-form__progress-btn.js-active:before {
+.multisteps-form__progress-btn.js-active .st_stepper_number {
   -webkit-transform: translateX(-50%) scale(1.2);
   transform: translateX(-50%) scale(1.2);
   background-color: var(--secondary-main);
