@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        html{
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
+        }
+        button{
+            background-color: blueviolet;
+            border-radius: 15px;
+            padding: 5px 10px;
+            border: none;
+            color: white;
+        }
+        ul,.bottom{
+            background-color: white;
+            padding: 15px;
+            list-style: none;
+            text-align: center;
+        }
+        tr{
+            margin: 10px 0;
+        }
+        ul li{
+            border-bottom: 1px solid ghostwhite;
+            padding: 20px;
+        }
+
+    </style>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://snehasish.pypepro.com/assets/css/vendors.bundle.css">
+<link rel="stylesheet" href="https://snehasish.pypepro.com/assets/css/style.bundle.css">
+<link rel="stylesheet" href="https://snehasish.pypepro.com/assets/css/tab.form.css">
+<link rel="stylesheet" href="https://snehasish.pypepro.com/assets/css/custom.css">
+<link href="https://snehasish.pypepro.com/assets/global/plugins/bootstrap-toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+<link href="https://snehasish.pypepro.com/assets/global/plugins/sweetalert/dist/sweetalert.css" rel="stylesheet"/>
+<link href="https://app.pypepro.com/assets/global/plugins/jquery-confirm/jquery-confirm.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://app.pypepro.com/assets/global/plugins/animate.css-4.0.0/animate.min.css" />
+<link href="https://app.pypepro.com/assets/global/plugins/intl-tel-input-16.0.0/css/intlTelInput.min.css" rel="stylesheet"/>
+<link href="https://app.pypepro.com/assets/global/plugins/jquery-confirm/jquery-confirm.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://snehasish.pypepro.com/assets/css/agency/custom.css">
+
+<link rel="stylesheet" href="https://app.pypepro.com/assets/css/agency-settings-list.css">
+
+<!-- font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- fa  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+
+    <div class="st_sendgrid_stepper">
+        <div class="st_sendgrid_stepper_heading">
+            <h6 class="TypographyH6">Sendgrid Automations</h6>
+            <p class="Helper-Text">Need help? Click here for a quick tutorial.</p>
+        </div>
+        <div class="st_sendgrid_content">
+            <div class=" overflow-hidden">
+                <div class="multisteps-form">
+                  <div class="row">
+                    <div class="col-12 mb-4">
+                      <div class="multisteps-form__progress">
+                        <button class="multisteps-form__progress-btn js-active" type="button" title="User Info"><span>1st Step</span></button>
+                        <button class="multisteps-form__progress-btn" type="button" title="Address"><span>2nd Step</span></button>
+                        <button class="multisteps-form__progress-btn" type="button" title="Order Info"><span>3rd Step</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12  ">
+                      <form class="multisteps-form__form">
+                        <div class="multisteps-form__panel shadow p-4 rounded js-active" data-animation="scaleIn">
+                          <div class="multisteps-form__content">
+                            <div class="form-row mt-4">
+                              <div class="col-12 col-sm-6">
+                                <label>Sendgrid Api key</label>
+                                <input class="multisteps-form__input form-control" type="text" placeholder="Enter Sendgrid Api key"/>
+                              </div>
+                              <div class="col-12 col-sm-6 ">
+                                <label>DNS Provider</label>
+                                <select class="multisteps-form__select form-control">
+                                  <option selected="selected">GoDaddy</option>
+                                  <option>GoDaddy</option>
+                                  <option>google</option>
+                                </select>
+                              </div>
+                              
+                            </div>
+                              
+                            <div class="button-row d-flex mt-4">
+                              <button class="btn btn-primary js-btn-next st_prev_next_btn" type="button" title="Next">
+                                <span class="st_icon_span">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12ZM11.78 16.39C11.71 16.32 11.65 16.23 11.61 16.14C11.57 16.05 11.55 15.95 11.55 15.85C11.55 15.75 11.57 15.65 11.61 15.56C11.65 15.47 11.7 15.38 11.78 15.31L14.3 12.77H7.87C7.67 12.77 7.47 12.69 7.33 12.54C7.18 12.4 7.1 12.2 7.1 12C7.1 11.8 7.18 11.6 7.33 11.46C7.47 11.32 7.67 11.23 7.87 11.23H14.29L11.77 8.7C11.7 8.62 11.64 8.54 11.61 8.45C11.57 8.35 11.55 8.25 11.55 8.15C11.55 8.05 11.57 7.95 11.61 7.86C11.65 7.77 11.71 7.68 11.78 7.61C11.85 7.54 11.94 7.48 12.03 7.44C12.12 7.4 12.22 7.38 12.32 7.38C12.42 7.38 12.52 7.4 12.61 7.44C12.7 7.48 12.79 7.54 12.86 7.61L16.68 11.46C16.83 11.6 16.91 11.8 16.91 12C16.91 12.2 16.83 12.4 16.69 12.54L12.87 16.39C12.8 16.46 12.71 16.52 12.62 16.56C12.53 16.6 12.43 16.62 12.33 16.62C12.23 16.62 12.13 16.6 12.04 16.56C11.93 16.52 11.85 16.46 11.78 16.39Z" fill="#2A2E34" fill-opacity="0.54"/>
+                                    </svg>
+                                </span>
+                                
+                                    Save & Continue</button>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="multisteps-form__panel shadow p-4 rounded " data-animation="scaleIn">
+                            <div class="multisteps-form__content">
+                                <div class="form-row mt-4">
+                                <div class="col-12 col-sm-6">
+                                  <label>Namecheap API Key</label>
+                                  <input class="multisteps-form__input form-control" type="text" placeholder="Enter Namecheap API"/>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label>Namecheap Username</label>
+                                    <input class="multisteps-form__input form-control" type="text" placeholder="Enter namecheap_username"/>
+                                  </div>
+                                
+                            </div>
+                            <div class="button-row d-flex mt-4">
+                              <button class="btn btn-primary ml-auto js-btn-prev st_prev_next_btn" type="button" title="Prev">
+                                <span class="st_icon_span">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 10C0 15.5226 4.4774 20 10 20C15.5226 20 20 15.5226 20 10C20 4.4774 15.5226 0 10 0C4.4774 0 0 4.4774 0 10ZM10.2236 5.60769C10.2953 5.67884 10.3523 5.76342 10.3913 5.85661C10.4304 5.94979 10.4507 6.04975 10.4511 6.15079C10.4515 6.25182 10.432 6.35194 10.3937 6.44543C10.3554 6.53892 10.299 6.62396 10.2279 6.69567L7.7125 9.23077H14.1346C14.3386 9.23077 14.5343 9.31181 14.6785 9.45607C14.8228 9.60033 14.9038 9.79599 14.9038 10C14.9038 10.204 14.8228 10.3997 14.6785 10.5439C14.5343 10.6882 14.3386 10.7692 14.1346 10.7692H7.7125L10.2279 13.3043C10.299 13.3761 10.3554 13.4612 10.3936 13.5548C10.4319 13.6483 10.4514 13.7485 10.4509 13.8496C10.4505 13.9506 10.4301 14.0506 10.391 14.1438C10.3519 14.237 10.2949 14.3216 10.2231 14.3928C10.1513 14.4639 10.0662 14.5203 9.97264 14.5585C9.8791 14.5968 9.77892 14.6163 9.67785 14.6158C9.57678 14.6154 9.47678 14.595 9.38357 14.5559C9.29037 14.5168 9.20577 14.4598 9.13462 14.388L5.31779 10.5418C5.17481 10.3977 5.09458 10.203 5.09458 10C5.09458 9.79702 5.17481 9.60226 5.31779 9.45817L9.13462 5.61202C9.20578 5.54014 9.29042 5.48301 9.3837 5.44388C9.47697 5.40476 9.57704 5.38441 9.67819 5.38401C9.77934 5.38361 9.87957 5.40316 9.97315 5.44154C10.0667 5.47992 10.1518 5.53638 10.2236 5.60769Z" fill="#2A2E34" fill-opacity="0.54"/>
+                                        </svg>
+                                        
+                                    </span>
+                                Go Back</button>
+                              <button class="btn btn-primary js-btn-next st-mr-24 st_prev_next_btn" type="button" title="Next">
+                                <span class="st_icon_span">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12ZM11.78 16.39C11.71 16.32 11.65 16.23 11.61 16.14C11.57 16.05 11.55 15.95 11.55 15.85C11.55 15.75 11.57 15.65 11.61 15.56C11.65 15.47 11.7 15.38 11.78 15.31L14.3 12.77H7.87C7.67 12.77 7.47 12.69 7.33 12.54C7.18 12.4 7.1 12.2 7.1 12C7.1 11.8 7.18 11.6 7.33 11.46C7.47 11.32 7.67 11.23 7.87 11.23H14.29L11.77 8.7C11.7 8.62 11.64 8.54 11.61 8.45C11.57 8.35 11.55 8.25 11.55 8.15C11.55 8.05 11.57 7.95 11.61 7.86C11.65 7.77 11.71 7.68 11.78 7.61C11.85 7.54 11.94 7.48 12.03 7.44C12.12 7.4 12.22 7.38 12.32 7.38C12.42 7.38 12.52 7.4 12.61 7.44C12.7 7.48 12.79 7.54 12.86 7.61L16.68 11.46C16.83 11.6 16.91 11.8 16.91 12C16.91 12.2 16.83 12.4 16.69 12.54L12.87 16.39C12.8 16.46 12.71 16.52 12.62 16.56C12.53 16.6 12.43 16.62 12.33 16.62C12.23 16.62 12.13 16.6 12.04 16.56C11.93 16.52 11.85 16.46 11.78 16.39Z" fill="#2A2E34" fill-opacity="0.54"/>
+                                    </svg></span>
+                                    Save & Continue</button>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="multisteps-form__panel shadow p-4 rounded " data-animation="scaleIn">
+                            <div class="multisteps-form__content">
+                                <div class="form-row mt-4">
+                                <div class="col-12 col-sm-6">
+                                  <label>Domain</label>
+                                  <input class="multisteps-form__input form-control" type="text" placeholder="Enter Domain"/>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label>Sub Domain</label>
+                                    <input class="multisteps-form__input form-control" type="text" placeholder="Enter Sub Domain"/>
+                                  </div>
+                                
+                            </div>
+                            <div class="row">
+                              <div class="button-row d-flex mt-4 col-12">
+                                <button class="btn btn-primary ml-auto js-btn-prev st_prev_next_btn" type="button" title="Prev">
+                                    <span class="st_icon_span">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 10C0 15.5226 4.4774 20 10 20C15.5226 20 20 15.5226 20 10C20 4.4774 15.5226 0 10 0C4.4774 0 0 4.4774 0 10ZM10.2236 5.60769C10.2953 5.67884 10.3523 5.76342 10.3913 5.85661C10.4304 5.94979 10.4507 6.04975 10.4511 6.15079C10.4515 6.25182 10.432 6.35194 10.3937 6.44543C10.3554 6.53892 10.299 6.62396 10.2279 6.69567L7.7125 9.23077H14.1346C14.3386 9.23077 14.5343 9.31181 14.6785 9.45607C14.8228 9.60033 14.9038 9.79599 14.9038 10C14.9038 10.204 14.8228 10.3997 14.6785 10.5439C14.5343 10.6882 14.3386 10.7692 14.1346 10.7692H7.7125L10.2279 13.3043C10.299 13.3761 10.3554 13.4612 10.3936 13.5548C10.4319 13.6483 10.4514 13.7485 10.4509 13.8496C10.4505 13.9506 10.4301 14.0506 10.391 14.1438C10.3519 14.237 10.2949 14.3216 10.2231 14.3928C10.1513 14.4639 10.0662 14.5203 9.97264 14.5585C9.8791 14.5968 9.77892 14.6163 9.67785 14.6158C9.57678 14.6154 9.47678 14.595 9.38357 14.5559C9.29037 14.5168 9.20577 14.4598 9.13462 14.388L5.31779 10.5418C5.17481 10.3977 5.09458 10.203 5.09458 10C5.09458 9.79702 5.17481 9.60226 5.31779 9.45817L9.13462 5.61202C9.20578 5.54014 9.29042 5.48301 9.3837 5.44388C9.47697 5.40476 9.57704 5.38441 9.67819 5.38401C9.77934 5.38361 9.87957 5.40316 9.97315 5.44154C10.0667 5.47992 10.1518 5.53638 10.2236 5.60769Z" fill="#2A2E34" fill-opacity="0.54"/>
+                                            </svg>
+                                            </span>
+                                        Go Back</button>
+                                <button class="btn btn-primary st-mr-24 st_prev_next_btn"  type="button" title="Next">
+                                    <span class="st_icon_span">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12ZM11.78 16.39C11.71 16.32 11.65 16.23 11.61 16.14C11.57 16.05 11.55 15.95 11.55 15.85C11.55 15.75 11.57 15.65 11.61 15.56C11.65 15.47 11.7 15.38 11.78 15.31L14.3 12.77H7.87C7.67 12.77 7.47 12.69 7.33 12.54C7.18 12.4 7.1 12.2 7.1 12C7.1 11.8 7.18 11.6 7.33 11.46C7.47 11.32 7.67 11.23 7.87 11.23H14.29L11.77 8.7C11.7 8.62 11.64 8.54 11.61 8.45C11.57 8.35 11.55 8.25 11.55 8.15C11.55 8.05 11.57 7.95 11.61 7.86C11.65 7.77 11.71 7.68 11.78 7.61C11.85 7.54 11.94 7.48 12.03 7.44C12.12 7.4 12.22 7.38 12.32 7.38C12.42 7.38 12.52 7.4 12.61 7.44C12.7 7.48 12.79 7.54 12.86 7.61L16.68 11.46C16.83 11.6 16.91 11.8 16.91 12C16.91 12.2 16.83 12.4 16.69 12.54L12.87 16.39C12.8 16.46 12.71 16.52 12.62 16.56C12.53 16.6 12.43 16.62 12.33 16.62C12.23 16.62 12.13 16.6 12.04 16.56C11.93 16.52 11.85 16.46 11.78 16.39Z" fill="#2A2E34" fill-opacity="0.54"/>
+                                        </svg></span>
+                                        Done</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+          
+                        
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+  
+    <script src="./st-script.js"></script>
+   
+    <script src = "https://app.pypepro.com/assets/js/vendors.bundle.js" ></script >
+        <script src = "https://app.pypepro.com/assets/js/scripts.bundle.js" ></script >
+        <script src = "https://app.pypepro.com/assets/js/dashboard.js" ></script >
+        <script src = "https://app.pypepro.com/assets/global/scripts/global.js?v1" ></script >
+        <script src = "https://app.pypepro.com/assets/js/tab.form.js" ></script >
+        <script src="https://app.pypepro.com/assets/global/plugins/bootstrap-toastr/toastr.min.js"></script>
+        <script src="https://app.pypepro.com/assets/global/plugins/jquery-confirm/jquery-confirm.min.js"></script>
+        <script src="https://app.pypepro.com/assets/global/plugins/bootstrap-select.js" type="text/javascript"></script>
+        <script src="https://app.pypepro.com/assets/global/plugins/parsleyjs/dist/parsley.min.js"></script>
+        <script src="https://app.pypepro.com/assets/global/plugins/intl-tel-input-16.0.0/js/intlTelInput.min.js" type="text/javascript"></script>
+        
+  </body>
+</html>
+
+
