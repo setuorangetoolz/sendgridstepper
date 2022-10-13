@@ -198,7 +198,7 @@ body a {
 .js-btn-prev,.st_cancel_btn {
   border: 1px solid var(--text-secondary) !important;
   border-radius: 5px !important;
-  background-color: transparent !important;
+  background-color: var(--white) !important;
   color: var(--text-secondary) !important;
 }
 .js-btn-prev:hover , .st_cancel_btn:hover{
