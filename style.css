@@ -195,20 +195,22 @@ body a {
   column-gap: 5px;
   background-color: var(--secondary-main) !important;
 }
-.js-btn-prev {
+.js-btn-prev,.st_cancel_btn {
   border: 1px solid var(--text-secondary) !important;
   border-radius: 5px !important;
   background-color: transparent !important;
   color: var(--text-secondary) !important;
 }
-.js-btn-prev:hover {
+.js-btn-prev:hover , .st_cancel_btn:hover{
   background-color: var(--secondary-main) !important;
+  color: var(--white);
 }
 .st_prev_next_btn:hover svg path {
   fill-opacity: 1 !important;
   fill: var(--white) !important;
 }
-.js-btn-prev .st_icon_span svg path {
+.js-btn-prev .st_icon_span svg path, 
+.st_cancel_btn .st_icon_span svg path {
   fill: var(--text-secondary);
 }
 .st_icon_span {
