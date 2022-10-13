@@ -3,7 +3,6 @@ const DOMstrings = {
     stepsBtns: document.querySelectorAll(`.multisteps-form__progress-btn`),
     stepsBar: document.querySelector('.multisteps-form__progress'),
     stepsForm: document.querySelector('.multisteps-form__form'),
-    stepsFormTextareas: document.querySelectorAll('.multisteps-form__textarea'),
     stepFormPanelClass: 'multisteps-form__panel',
     stepFormPanels: document.querySelectorAll('.multisteps-form__panel'),
     stepPrevBtnClass: 'js-btn-prev',
