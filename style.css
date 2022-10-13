@@ -195,12 +195,7 @@ body a {
   column-gap: 5px;
   background-color: var(--secondary-main) !important;
 }
-.js-btn-prev,.st_cancel_btn {
-  border: 1px solid var(--text-secondary) !important;
-  border-radius: 5px !important;
-  background-color: var(--white) !important;
-  color: var(--text-secondary) !important;
-}
+
 .js-btn-prev:hover , .st_cancel_btn:hover{
   background-color: var(--secondary-main) !important;
   color: var(--white);
@@ -222,7 +217,12 @@ body a {
 .multisteps-form__form {
   position: relative;
 }
-
+.js-btn-prev,.st_cancel_btn {
+  border: 1px solid var(--text-secondary) !important;
+  border-radius: 5px !important;
+  background-color: transparent !important;
+  color: var(--text-secondary) !important;
+}
 .multisteps-form__panel {
   position: absolute;
   top: 0;
@@ -231,13 +231,18 @@ body a {
   height: 0;
   opacity: 0;
   visibility: hidden;
-  background: var(--light-gray);
-  border-radius: 8px;
 }
 .multisteps-form__panel.js-active {
   height: auto;
   opacity: 1;
   visibility: visible;
+}
+.st_step_form_inputs{
+  width: 100%;
+  padding: 24px;
+  padding-bottom: 80px;
+  background: var(--light-gray);
+  border-radius: 8px;
 }
 .multisteps-form__panel[data-animation="scaleOut"] {
   -webkit-transform: scale(1.1);
