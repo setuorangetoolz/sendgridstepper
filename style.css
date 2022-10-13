@@ -157,7 +157,7 @@ body a {
 .multisteps-form__progress-btn:after {
   position: absolute;
   top: 50%;
-  right: 95%;
+  right: 100%;
   transition-property: all;
   transition-duration: 0.15s;
   transition-timing-function: linear;
