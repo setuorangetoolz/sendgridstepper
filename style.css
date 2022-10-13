@@ -66,6 +66,7 @@ border-radius: 4px !important;
 }
 .select-items div{
   border-left: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
 }
 /*style items (options):*/
 .select-items {
