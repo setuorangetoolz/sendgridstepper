@@ -39,6 +39,12 @@ select option:hover {
     border: 1px solid var(--input-border) !important;
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1) !important;
 border-radius: 4px !important;
+position: relative;
+}
+.custom-select span{
+  position: absolute;
+    right: 0;
+    top: 5px;
 }
 /*the container must be positioned relative:*/
 .custom-select {
